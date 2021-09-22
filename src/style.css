@@ -1,0 +1,85 @@
+:root {
+	--bg-color: 208, 80%, 55%;
+	--text-color: 0 0% 0%;
+	--digit-background-color: 208, 82%, 50%;
+	--text-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
+	--clock-font-family: 'Major Mono Display', monospace;
+}
+
+html {
+	background: hsl(var(--bg-color));
+	font-size: 62.5%;
+}
+
+.party {
+	font-family: var(--text-font-family);
+	text-align: center;
+	font-size: 10vw;
+	margin-block-start: 0.3em;
+	margin-block-end: 0;
+}
+
+#clock {
+	display: grid;
+	grid-template-areas: 'day-digit hour-digit minute-digit second-digit' 'day-text hour-text minute-text second-text';
+	margin-block-start: 5vw;
+	gap: 10px;
+}
+
+[data-time],
+[data-text] {
+	place-self: center;
+}
+
+[data-time] {
+	display: flex;
+	font-family: var(--clock-font-family);
+	font-size: 14vw;
+	height: 1.2em;
+}
+
+[data-time] span {
+	background: hsl(var(--digit-background-color));
+	border-radius: 0.1em;
+	display: inline-block;
+	margin-inline: 0.05em;
+}
+
+[data-text] {
+	font-family: var(--clock-font-family);
+	font-size: 2rem;
+}
+
+[data-time='day'] {
+	grid-area: day-digit;
+}
+
+[data-time='hour'] {
+	grid-area: hour-digit;
+}
+
+[data-time='minute'] {
+	grid-area: minute-digit;
+}
+
+[data-time='second'] {
+	grid-area: second-digit;
+}
+
+[data-text='day'] {
+	grid-area: day-text;
+}
+
+[data-text='hour'] {
+	grid-area: hour-text;
+}
+
+[data-text='minute'] {
+	grid-area: minute-text;
+}
+
+[data-text='second'] {
+	grid-area: second-text;
+}
