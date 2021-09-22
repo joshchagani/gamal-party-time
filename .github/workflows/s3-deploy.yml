@@ -24,10 +24,10 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build App
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to S3
         run: aws s3 sync ./dist/ ${{ secrets.AWS_BUCKET  }}
