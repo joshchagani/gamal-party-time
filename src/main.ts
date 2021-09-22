@@ -1,5 +1,5 @@
 // Packages
-import { format, intervalToDuration } from 'date-fns'
+import { intervalToDuration } from 'date-fns'
 
 // Styles
 import './reset.css'
@@ -27,7 +27,7 @@ function timeCountdown() {
 	second.innerHTML = `<span class='digit'>${splitSeconds[0]}</span><span class='digit'>${splitSeconds[1]}</span>`
 }
 
-function digitSplitter(num: number): string[] {
+function digitSplitter(num: number = 0): string[] {
 	return num
 		.toLocaleString('en-US', {
 			minimumIntegerDigits: 2,
