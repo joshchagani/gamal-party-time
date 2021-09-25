@@ -44,6 +44,7 @@ __metadata:
   resolution: "Countdown@workspace:."
   dependencies:
     date-fns: ^2.24.0
+    emojisplosion: ^2.6.1
     typescript: ^4.3.2
     vite: ^2.5.4
   languageName: unknown
@@ -239,6 +240,13 @@ __metadata:
   version: 1.1.2
   resolution: "depd@npm:1.1.2"
   checksum: 6b406620d269619852885ce15965272b829df6f409724415e0002c8632ab6a8c0a08ec1f0bd2add05dc7bd7507606f7e2cc034fa24224ab829580040b835ecd9
+  languageName: node
+  linkType: hard
+
+"emojisplosion@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "emojisplosion@npm:2.6.1"
+  checksum: 8097c4595728e41445ad4761dd35fe415d95ce5941f52c928919acd94bda03aca863ecd948c061b0e3c7d979e8ca9eb10b2a7509124b8ea258912e13993cbe40
   languageName: node
   linkType: hard
 

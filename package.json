@@ -11,6 +11,7 @@
 		"vite": "^2.5.4"
 	},
 	"dependencies": {
-		"date-fns": "^2.24.0"
+		"date-fns": "^2.24.0",
+		"emojisplosion": "^2.6.1"
 	}
 }

@@ -1,5 +1,5 @@
 :root {
-	--bg-color: 208, 80%, 55%;
+	--bg-color: 48, 146, 232;
 	--text-color: 0 0% 0%;
 	--digit-background-color: 208, 82%, 50%;
 	--text-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -9,7 +9,7 @@
 }
 
 html {
-	background: hsl(var(--bg-color));
+	background: rgb(var(--bg-color));
 	font-size: 62.5%;
 }
 
@@ -26,6 +26,13 @@ html {
 	grid-template-areas: 'day-digit hour-digit minute-digit second-digit' 'day-text hour-text minute-text second-text';
 	margin-block-start: 5vw;
 	gap: 10px;
+	font-size: 10vw;
+}
+
+@media screen and (min-width: 40rem) {
+	#clock {
+		font-size: 14vw;
+	}
 }
 
 [data-time],
@@ -36,7 +43,6 @@ html {
 [data-time] {
 	display: flex;
 	font-family: var(--clock-font-family);
-	font-size: 14vw;
 	height: 1.2em;
 }
 
@@ -49,7 +55,7 @@ html {
 
 [data-text] {
 	font-family: var(--clock-font-family);
-	font-size: 2rem;
+	font-size: 0.2em;
 }
 
 [data-time='day'] {

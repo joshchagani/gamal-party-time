@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["date-fns", "npm:2.24.0"],
+            ["emojisplosion", "npm:2.6.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
             ["vite", "npm:2.5.10"]
           ],
@@ -88,6 +89,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["Countdown", "workspace:."],
             ["date-fns", "npm:2.24.0"],
+            ["emojisplosion", "npm:2.6.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
             ["vite", "npm:2.5.10"]
           ],
@@ -326,6 +328,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/depd-npm-1.1.2-b0c8414da7-6b406620d2.zip/node_modules/depd/",
           "packageDependencies": [
             ["depd", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["emojisplosion", [
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/emojisplosion-npm-2.6.1-9c1bdabcca-8097c45957.zip/node_modules/emojisplosion/",
+          "packageDependencies": [
+            ["emojisplosion", "npm:2.6.1"]
           ],
           "linkType": "HARD",
         }]
