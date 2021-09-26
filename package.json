@@ -1,6 +1,8 @@
 {
 	"name": "Countdown",
 	"version": "0.0.1",
+	"license": "MIT",
+	"author": "Joshua Chagani (https://joshuachagani.com)",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
