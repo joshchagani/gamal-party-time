@@ -15,7 +15,7 @@ const minute = document.querySelector<HTMLDivElement>('[data-time="minute"]')!
 const second = document.querySelector<HTMLDivElement>('[data-time="second"]')!
 
 async function isItTimeToParty() {
-	if (isPast(PARTY_DATE)) return setInterval(timeCountdown, ONE_SECOND)
+	if (!isPast(PARTY_DATE)) return setInterval(timeCountdown, ONE_SECOND)
 	const clock = document.querySelector<HTMLDivElement>('#clock')!
 	const party = document.querySelector<HTMLDivElement>('.party')!
 	const { emojisplosions } = await import('emojisplosion')
